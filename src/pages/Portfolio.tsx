@@ -129,9 +129,9 @@ const Portfolio = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Portofolio Proyek
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Kumpulan proyek yang telah saya kerjakan dengan berbagai teknologi modern
-          </p>
+          </p> */}
           
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>

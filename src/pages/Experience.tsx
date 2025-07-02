@@ -34,9 +34,9 @@ const Experience = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Pengalaman Kerja
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Perjalanan karir saya dalam dunia pengembangan web dan teknologi
-          </p>
+          </p> */}
         </div>
 
         <div className="relative">
