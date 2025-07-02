@@ -3,7 +3,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      position: "Senior Full-Stack Developer",
+      position: "Magang Kantor DPPKBP3A",
       company: "Tech Solutions Indonesia",
       period: "2022 - Sekarang",
       description: [
@@ -15,7 +15,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      position: "Full-Stack Developer",
+      position: "Magang Pengadilan Agama Purwokerto",
       company: "Digital Innovation Corp",
       period: "2020 - 2022",
       description: [
@@ -23,30 +23,6 @@ const Experience = () => {
         "Berkolaborasi dengan tim UI/UX untuk mengimplementasikan design system yang konsisten",
         "Mengintegrasikan payment gateway dan sistem notifikasi real-time",
         "Melakukan testing otomatis dan deployment menggunakan CI/CD pipeline"
-      ]
-    },
-    {
-      id: 3,
-      position: "Junior Web Developer",
-      company: "StartUp Hub",
-      period: "2019 - 2020",
-      description: [
-        "Mengembangkan website company profile dan landing page untuk berbagai klien",
-        "Belajar dan mengimplementasikan responsive design dan SEO best practices",
-        "Berpartisipasi dalam agile development process dan daily standup meetings",
-        "Melakukan maintenance dan bug fixing untuk aplikasi web yang sudah ada"
-      ]
-    },
-    {
-      id: 4,
-      position: "Web Development Intern",
-      company: "Creative Agency XYZ",
-      period: "2018 - 2019",
-      description: [
-        "Membantu dalam pengembangan website portfolio untuk klien kreatif",
-        "Mempelajari dasar-dasar web development dan version control menggunakan Git",
-        "Membantu dalam testing website di berbagai browser dan device",
-        "Berkontribusi dalam brainstorming session untuk user experience improvement"
       ]
     }
   ];
@@ -80,52 +56,26 @@ const Experience = () => {
                       <h3 className="text-2xl font-bold text-gray-900 mb-1">
                         {exp.position}
                       </h3>
-                      <p className="text-lg text-blue-600 font-semibold">
+                      {/* <p className="text-lg text-blue-600 font-semibold">
                         {exp.company}
-                      </p>
+                      </p> */}
                     </div>
-                    <div className="text-right mt-2 md:mt-0">
+                    {/* <div className="text-right mt-2 md:mt-0">
                       <p className="text-gray-500 font-medium">{exp.period}</p>
-                    </div>
+                    </div> */}
                   </div>
 
-                  <ul className="space-y-2">
+                  {/* <ul className="space-y-2">
                     {exp.description.map((desc, descIndex) => (
                       <li key={descIndex} className="text-gray-700 flex items-start">
                         <span className="text-blue-500 mr-2 mt-1 text-sm">▸</span>
                         {desc}
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Mari Berkolaborasi!
-          </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Dengan pengalaman yang saya miliki, saya siap membantu mewujudkan proyek digital 
-            Anda dari konsep hingga implementasi. Mari diskusikan bagaimana saya dapat 
-            berkontribusi untuk kesuksesan proyek Anda.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Hubungi Saya
-            </a>
-            <a 
-              href="/portfolio" 
-              className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium"
-            >
-              Lihat Portofolio
-            </a>
           </div>
         </div>
       </div>

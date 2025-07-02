@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {getAbout} from '../api/about';
+import foto  from '../assets/foto.jpg';
 
 type AboutData = {
   text: string;
@@ -31,9 +32,9 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Tentang Saya
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Mengenal lebih dekat tentang perjalanan dan passion saya dalam dunia teknologi
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -43,7 +44,7 @@ const About = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                    src={foto}
                     alt="Profile" 
                     className="w-full h-full object-cover rounded-full"
                   />
@@ -58,18 +59,19 @@ const About = () => {
           {/* Biography Section */}
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Salam kenal!
+              Hallo Semua
             </h2>
             
             <p className="text-gray-700 text-lg leading-relaxed">
-              {dataAbout?.text}
+              {/* {dataAbout?.text} */}
+              Seorang mahasiswa aktif di STMIK Widya Utama Purwokerto jurusan Teknik Informatika. Saya memiliki latar belakang pendidikan di bidang Otomatisasi Tata Kelola Perkantoran dan sedang mengembangkan minat serta keahlian di bidang data analyst. <br /> <br />Saya memiliki pengalaman magang di instansi pemerintahan seperti DPPKBP3A dan Pengadilan Agama Purwokerto, yang membentuk kemampuan saya dalam mengelola data, memahami sistem kerja administratif, dan mengembangkan solusi berbasis teknologi.
             </p>
 
             {/* Skills */}
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Keahlian Utama</h3>
               <div className="flex flex-wrap gap-3">
-                {['JavaScript', 'React', 'Node.js', 'Python', 'TypeScript', 'MongoDB', 'PostgreSQL', 'AWS'].map((skill) => (
+                {['Analisis Data', 'Microsoft Excel', 'Google Sheets', 'Visualisasi Data', 'Administrasi Perkantoran', 'Komunikasi & Kerja Tim'].map((skill) => (
                   <span 
                     key={skill}
                     className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
