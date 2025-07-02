@@ -49,11 +49,11 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Hubungi Saya
+            Kontak Saya
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Mari berkolaborasi! Saya selalu terbuka untuk proyek baru dan kesempatan menarik
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -61,7 +61,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Mari Terhubung
+                Detail
               </h2>
               <p className="text-gray-600 text-lg mb-8">
                 Saya siap membantu mewujudkan ide digital Anda. Jangan ragu untuk 
@@ -76,7 +76,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">john.doe@example.com</p>
+                  <p className="text-gray-600">anteng2002septiana@email.com</p>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Telepon</h3>
-                  <p className="text-gray-600">+62 812-3456-7890</p>
+                  <p className="text-gray-600">0858-7091-5218</p>
                 </div>
               </div>
 
@@ -95,14 +95,14 @@ const Contact = () => {
                   <MapPin className="text-blue-600" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Lokasi</h3>
-                  <p className="text-gray-600">Jakarta, Indonesia</p>
+                  <h3 className="font-semibold text-gray-900">Alamat</h3>
+                  <p className="text-gray-600">Jl. Imam Bonjol, Pliken, kec. Kembaran, kab. Banyumas</p>
                 </div>
               </div>
             </div>
 
             {/* Social Media Links */}
-            <div className="pt-8">
+            {/* <div className="pt-8">
               <h3 className="font-semibold text-gray-900 mb-4">Ikuti Saya</h3>
               <div className="flex space-x-4">
                 <a 
@@ -124,7 +124,7 @@ const Contact = () => {
                   Twitter
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import {getAbout} from '../api/about';
 import foto  from '../assets/foto.jpg';
+import { Mail, MapPin, Phone, School } from 'lucide-react';
 
 type AboutData = {
   text: string;
@@ -79,6 +80,31 @@ const About = () => {
                     {skill}
                   </span>
                 ))}
+              </div>
+            </div>
+            
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Pendidikan</h3>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <School className="text-blue-600" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">STMIK WIDYA UTAMA PURWOKERTO</h3>
+                  <p className="text-gray-600">S1 Teknik Informatika</p>
+                  <p className="text-gray-600">2022 – 2026</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <School className="text-blue-600" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">SMK N 1 BANYUMAS</h3>
+                  <p className="text-gray-600">Jurusan Otomatisasi Tata Kelola Perkantoran</p>
+                  <p className="text-gray-600">2019 – 2021</p>
+                </div>
               </div>
             </div>
           </div>
